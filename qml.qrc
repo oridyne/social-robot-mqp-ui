@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>faceCanvas.qml</file>
+        <file>../../../../run/user/1000/doc/ab0dcc65/blink.gif</file>
+    </qresource>
+    <qresource prefix="/images"/>
+</RCC>
