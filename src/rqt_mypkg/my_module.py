@@ -69,12 +69,12 @@ class ImagePlayer(QWidget):
         gifSize = QtCore.QSize(*smooth_gif_resize(filename, 500, 500))
         self.movie.setScaledSize(gifSize)
         size = self.movie.scaledSize()
-        self.setGeometry(300, 300, size.width(), size.height())
+        self.setGeometry(300, 0, size.width(), size.height())
         self.setWindowTitle(title)
         # self.setWindowFlags(QtCore.Qt.Window | QtCore.Qt.CustomizeWindowHint | QtCore.Qt.WindowStaysOnTopHint)
         self.movie_screen = QLabel()
         # Make label fit the gif
-        self.movie_screen.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        #self.movie_screen.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         self.movie_screen.setAlignment(QtCore.Qt.AlignCenter)
         # self.movie_screen.setMaximumWidth(100)
 
